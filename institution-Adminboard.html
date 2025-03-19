@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Institution Admin Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff;
+    }
+
+    .header {
+      background-color: #42a5f5;
+      color: white;
+      padding: 20px;
+      position: relative;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .header img {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .dropdowns {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 40px 0 20px;
+      flex-wrap: wrap;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown select {
+      padding: 12px 36px 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #42a5f5;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      box-shadow: 2px 2px 4px #888;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+
+    .dropdown::after {
+      content: '▼';
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: white;
+      font-size: 12px;
+    }
+
+    .dropdown select:focus {
+      background-color: white;
+      color: black;
+      outline: none;
+    }
+
+    .content-box {
+      width: 60%;
+      min-height: 250px;
+      border: 1px solid #000;
+      border-radius: 8px;
+      margin: 0 auto 30px;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .pagination button {
+      background-color: #2c2c2c;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .pagination button:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    Institution Admin
+    <img src="ismllogo.jpg" alt="ISML Logo">
+  </div>
+
+  <div class="dropdowns">
+    <div class="dropdown">
+      <select>
+        <option disabled selected>Department</option>
+        <option>Physics</option>
+        <option>Chemistry</option>
+        <option>Maths</option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <select>
+        <option disabled selected>Shift</option>
+        <option>Shift-1</option>
+        <option>Shift-2</option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <select>
+        <option disabled selected>Report</option>
+        <option>Week-1</option>
+        <option>Week-2</option>
+        <option>Week-3</option>
+        <option>Week-4</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="content-box">
+    <!-- This is where reports or content can be shown -->
+  </div>
+
+  <div class="pagination">
+    <button>&lt;</button>
+    <button>&gt;</button>
+  </div>
+
+</body>
+</html>

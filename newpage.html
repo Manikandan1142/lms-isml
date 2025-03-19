@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Session</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Video and Session Info -->
+    <div class="video-container">
+        <h2>Live Session</h2>
+
+        <video width="650" controls autoplay>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+       
+        <br>
+        <!-- <a href="student-dashboard.html">Back to Dashboard</a> -->
+    </div>
+    <div class="video-info">
+        <p>Session: 1</p>
+        <p>Topic: Introduction of French</p>
+        <p>Class Time: 6:00 pm - 7:00 pm</p>
+      </div>
+    </div>
+    <!-- Right-side Moderator Chat -->
+    <div class="moderator-chatbox">
+        <h3>Give your Doubts here..... </h3>
+        <div class="chat-messages" id="chatMessages">
+            <p><strong>Student 1:</strong> Bonjour!</p>
+            <p><strong>Moderator 1:</strong> Hi! Welcome to the session.</p>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Type something..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var input = document.getElementById("chatInput");
+            var messages = document.getElementById("chatMessages");
+
+            if (input.value.trim() !== "") {
+                var newMessage = document.createElement("p");
+                newMessage.innerHTML = "<strong>You:</strong> " + input.value;
+                messages.appendChild(newMessage);
+                input.value = "";
+                messages.scrollTop = messages.scrollHeight;
+            }
+        }
+    </script>
+
+</body>
+</html>

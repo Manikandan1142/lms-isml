@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .card {
+            width: 250px; /* Fixed width for consistency */
+            min-height: 180px; /* Increased height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centers content vertically */
+            background-color: #007bff; /* Blue background */
+            color: white; /* White text */
+            border: none; /* Removes default card border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+        }
+
+        .btn {
+            background-color: white; /* White button */
+            color: #007bff; /* Blue text for contrast */
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4 text-center">
+        <h2>Let's Practice</h2>
+
+        <!-- Row 1 -->
+        <div class="d-flex justify-content-center gap-4 mt-4">
+            <div class="card text-center p-3">
+                <h5 class="card-title">Learn & Listen</h5>
+                <button class="btn btn-primary" onclick="window.location.href='exercise1.html';">Start</button>
+            </div>
+
+            <div class="card text-center p-3">
+                <h5 class="card-title">Speak & Improve</h5>
+                <button class="btn btn-primary" onclick="window.location.href='exercise2.html';">Start</button>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="d-flex justify-content-center gap-4 mt-4">
+            <div class="card text-center p-3">
+                <h5 class="card-title">Let's Read</h5>
+                <button class="btn btn-primary" onclick="window.location.href='exercise3.html';">Start</button>
+            </div>
+
+            <div class="card text-center p-3">
+                <h5 class="card-title">Try It Yourself</h5>
+                <button class="btn btn-primary" onclick="window.location.href='exercise4.html';">Start</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Institution Admin Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      background-color: white;
+    }
+
+    .header {
+      background-color: #3498db;
+      padding: 20px;
+      color: white;
+      font-size: 26px;
+      font-weight: bold;
+      text-shadow: 1px 1px #aaa;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #999;
+    }
+
+    .box-container {
+      margin: 60px auto 30px;
+      background: #fff;
+      width: fit-content;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 2px 2px 10px #ccc;
+    }
+
+    .lang-btn {
+      background-color: #3498db;
+      color: white;
+      padding: 12px 24px;
+      margin: 0 15px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 4px #888;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn:hover {
+      transform: translateY(-4px);
+      background-color: #217dbb;
+    }
+
+    .upload-btn,
+    .submit-btn {
+      margin-top: 25px;
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .upload-btn {
+      background-color: #3498db;
+      color: white;
+      box-shadow: 0 4px #888;
+    }
+
+    .upload-btn:hover {
+      background-color: #217dbb;
+    }
+
+    .submit-btn {
+      margin-top: 20px;
+      background-color: #eee;
+      color: black;
+      box-shadow: 0 4px #bbb;
+    }
+
+    .submit-btn:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    Insititution Admin
+    <img src="ismllogo.jpg" alt="ISML Logo" class="logo" />
+  </div>
+
+  <div class="box-container">
+    <button class="lang-btn">French</button>
+    <button class="lang-btn">German</button>
+    <button class="lang-btn">Japanese</button>
+  </div>
+
+  <button class="upload-btn">Student Data Upload</button><br/>
+
+  <a href="institution-Adminboard.html"><button>Submit</button></a>
+
+</body>
+</html>
